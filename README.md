@@ -46,3 +46,6 @@ SICK gateway (connecting Moisture + Temp sensor and Light sensor): 192.168.0.5
 > Line 10-19 should be changed (should be understandable)
 > Line 193 and 211 file directory should be changed to the desired location for light and temp sensor
 
+
+**Main Contributors to the Project**
+Ryan, Horatio, Justin, Ilhan
