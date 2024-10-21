@@ -24,26 +24,35 @@ SICK gateway (connecting Moisture + Temp sensor and Light sensor): 192.168.0.5
 ## Explanation of files
 **import_light.py**
 > Code is used to request data from the light sensor and store it in a json file named light.json
+>
 > You might want to change the json_file_path in line 19
 
 **import_temp.py**
 > Code is used to request data from the Moisture + Temp sensor and store it in a json file named temp.json
+> 
 > You might want to change the json_file_path in line 19
 
 **nova_http_api.py**
 > This code is from SICK Hackathon coaches (huge thanks and credit to them)
+> 
 > You can read the code if you want, but honestly, you will not be touching this file unless you are trying to add more interactions with the SICK Inspector 83X
 
 **trigger_inference_on_camera.py**
 > Code uses the NOVA HTTP API library to interact with the SICK Inspector 83X. It also merges the data from all the JSON files into 1 JSON file. Lastly, it also asks the user for an interval that the SICK Inspector 83X camera to not take photos (Eg user input is 5, the SICK Inspector 83X will take a photo every 5 seconds)
+> 
 > Line 13 moisture + temp sensor data file name may be changed
+> 
 > Line 14 light sensor data file name may be changed
+> 
 > Line 15 final merged data file name may be changed
+> 
 > Line 34 and 36 value may be changed if not using AIClassification or getting ClassName (You will understand when you use the SICK Inspector 83X UI)
 
 **withdatetimetest2.py**
 > Code pushses the final merged data file (in this scenario urdad.json) to Elastic Search
+> 
 > Line 10-19 should be changed (should be understandable)
+> 
 > Line 193 and 211 file directory should be changed to the desired location for light and temp sensor
 
 
