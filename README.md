@@ -48,4 +48,5 @@ SICK gateway (connecting Moisture + Temp sensor and Light sensor): 192.168.0.5
 
 
 **Main Contributors to the Project**
+
 Ryan, Horatio, Justin, Ilhan
